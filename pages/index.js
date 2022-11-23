@@ -20,6 +20,21 @@ const Home = () => {
         <Link href="/burgers/">
           <a className={styles.btn}>Все бургеры</a>
         </Link>
+
+        <form action="/send-data-here" method="post">
+  <label for="roll">Roll Number</label>
+  <input
+    type="text"
+    id="roll"
+    name="roll"
+    required
+    minLength="10"
+    maxLength="20"
+  />
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required />
+  <button type="submit">Submit</button>
+</form>
       </div>
     </>
   );
